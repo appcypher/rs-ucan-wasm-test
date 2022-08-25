@@ -1,0 +1,20 @@
+[package]
+name = "rs-ucan-test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ucan = { git = "https://github.com/cdata/rs-ucan", rev = "5d80833c545a57f3cdd23781cf890854d69a0439", version = "0.6.0-alpha.1" }
+wasm-bindgen = "0.2"
+wasm-bindgen-futures = "0.4"
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.0"
+
+[lib]
+path = "lib.rs"
+
+[target.wasm32-unknown-unknown]
+runner = 'wasm-bindgen-test-runner'
