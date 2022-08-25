@@ -527,8 +527,6 @@ name = "rs-ucan-test"
 version = "0.1.0"
 dependencies = [
  "ucan",
- "wasm-bindgen",
- "wasm-bindgen-futures",
  "wasm-bindgen-test",
 ]
 
